@@ -36,3 +36,117 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git branch
+* master
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git checkout -b Dev
+Switched to a new branch 'Dev'
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (Dev)
+$ git branch
+* Dev
+  master
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (Dev)
+$ git status
+On branch Dev
+nothing to commit, working tree clean
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (Dev)
+$ ls
+GitCommand.txt  Week1_AssignmentOnGit/
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (Dev)
+$ git checkout -b Qa
+Switched to a new branch 'Qa'
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (Qa)
+$ git checkout -b Feature
+Switched to a new branch 'Feature'
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (Feature)
+$ git checkout -b Delivery
+Switched to a new branch 'Delivery'
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (Delivery)
+$ git branch
+* Delivery
+  Dev
+  Feature
+  Qa
+  master
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (Delivery)
+$ git checkout -b master
+fatal: A branch named 'master' already exists.
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git remote add origin git@github.com:Mayankraj-Max/PJP2.0.git
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommand.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git commit -m "Updating the command file"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommand.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git add .
+warning: CRLF will be replaced by LF in GitCommand.txt.
+The file will have its original line endings in your working directory
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   GitCommand.txt
+
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git commit -m "Updating the command file"
+[master 837506e] Updating the command file
+ 1 file changed, 38 insertions(+)
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git push -u origin master
+Enter passphrase for key '/c/Users/rajma/.ssh/id_rsa':
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (21/21), 2.52 KiB | 88.00 KiB/s, done.
+Total 21 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Mayankraj-Max/PJP2.0.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+rajma@DESKTOP-TTQ99K5 MINGW64 ~/eclipse-workspace/PJP2.0/Week1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+
